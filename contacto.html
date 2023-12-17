@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Diseño y Desarrollo Web</title>
+    <link rel="stylesheet" href="css/estilos.css">
+  </head>
+  <body>
+    <header>
+      <div class="contenedor">
+        <div id="marca">
+			<h1 class="resaltado">Diseño y Desarrollo Web</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li class="actual"><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="boletin">
+      <div class="contenedor">
+        <h1>Subscríbete a nuestro boletín</h1>
+        <form>
+          <input type="email" placeholder="Ingrese el Email...">
+          <button type="submit" class="boton1">Suscribirse</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="main">
+      <div class="contenedor">
+        <h1>Contacto</h1>
+          <form>
+            <label>Nombre</label>
+            <input type="text" name="nombre" placeholder="Ingresa tu nombre">
+            <br>
+            <label>Email</label>
+            <input type="text" name="email" placeholder="Ingresa tu email">
+            <br>
+            <label>Teléfono</label>
+            <input type="text" name="telefono" placeholder="Ingresa tu teléfono">
+            <br>
+            <label>Celular</label>
+            <input type="text" name="nombre" placeholder="Ingresa tu celular">
+            <br>
+            <label>Nombre</label>
+            <textarea></textarea>
+            <br>
+            <input type="submit" name="enviar" value="Enviar">
+          </form>
+      </div>
+    </section>
+    
+    <div class="dialogflow-messenger">
+      <style>
+        df-messenger {
+          --df-messenger-bot-message: #17375D;
+          --df-messenger-button-titlebar-color: #17375D;
+          --df-messenger-chat-background-color: #fafafa;
+          --df-messenger-font-color: white;
+          --df-messenger-send-icon: #17375D;
+          --df-messenger-user-message: #479b3d;
+          --df-messenger-minimized-chat-close-icon-color: #ff0000;
+        }
+      </style>
+      <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+      <df-messenger chat-title="ChattyBot" agent-id="c2f04826-3d09-4911-9742-e91919b317cf"
+        chat-icon="https://i.ibb.co/Gdff16q/Sin-t-tulo-14-de-diciembre-de-2023-12-09-33.png"
+        df-messenger-bot-message="" language-code="es" chat-width="500px" chat-height="500px"></df-messenger>
+    </div>
+
+    <footer>
+      <span>Diseño y Desarrollo Web, Copyright &copy; 2019</span>
+    </footer>
+  </body>
+</html>
